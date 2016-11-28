@@ -1,0 +1,21 @@
+<?php
+
+	/*
+	+--------------------------------------------------------------------------------+
+	|Function to generate random number followed by a name (provided as a parameter).|
+	|Description: void generate(String $name)                                        |
+	|Author: Sayan Das <sayan@cyberdude.com>                                         |
+	+--------------------------------------------------------------------------------+
+	*/
+
+	function generate($name = 'Default') {
+
+		// Generate a random number between 6 and 15 (inclusive)
+		$rand_num = rand(6, 15);
+
+		/* Print output using ',' without concatination is more efficient.
+		Reference: http://stackoverflow.com/questions/5367477/php-echo-performance */
+		echo $name, ' ', $rand_num;
+	}
+
+?>
